@@ -1,13 +1,26 @@
+import java.util.Arrays;
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-    //    HashMap<int,int> hashed = new HashMap<>();
+    int[][] A = new int[nums.length][2];
     for(int i=0;i<nums.length;i++){
-        for(int j=i+1;j<nums.length;j++){
-            if(nums[i]+nums[j]==target){
-                return new int[] {i,j};
-            }
+        A[i][0] = nums[i];
+        A[i][1] = i;
+    }
+    Arrays.sort(A,Comparator.comparingInt(a-> a[0]));
+    int i=0,j=nums.length-1;
+    while (i<j){
+        int curr = A[i][0] + A[j][0];
+        if(curr>target){
+            j--;
+        }
+        else if(curr<target){
+            i++;
+        }
+        else{
+            return new int[]{A[i][1], A[j][1]};
         }
     }
-    return new int[10];
+    return new int[0];
+    
     }
 }
