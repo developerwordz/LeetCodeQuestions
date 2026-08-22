@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0049-group-anagrams) |
 | [0169-majority-element](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0217-contains-duplicate) |
+| [0705-design-hashset](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0705-design-hashset) |
 | [1929-concatenation-of-array](https://github.com/developerwordz/LeetCodeQuestions/tree/master/1929-concatenation-of-array) |
 ## Hash Table
 |  |
@@ -18,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0049-group-anagrams) |
 | [0169-majority-element](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0217-contains-duplicate) |
+| [0705-design-hashset](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0705-design-hashset) |
 ## Simulation
 |  |
 | ------- |
@@ -53,4 +55,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0169-majority-element) |
+## Linked List
+|  |
+| ------- |
+| [0705-design-hashset](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0705-design-hashset) |
+## Design
+|  |
+| ------- |
+| [0705-design-hashset](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0705-design-hashset) |
+## Hash Function
+|  |
+| ------- |
+| [0705-design-hashset](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0705-design-hashset) |
 <!---LeetCode Topics End-->
