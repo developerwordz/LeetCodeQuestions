@@ -1,37 +1,36 @@
 class MyHashSet {
-    int bucket = 10000;
-    List<Integer>[] buckets ;
+    int bucketcount = 10000;
+    List<Integer> buckets[];
     public MyHashSet() {
-        this.buckets = new LinkedList[bucket];
+        buckets = new List[bucketcount];
     }
-    public int Hashing(int key){
-        return key%bucket;
+    public int hash(int key){
+        return key%bucketcount;
     }
+    
     public void add(int key) {
-        int i = Hashing(key);
+        int i = hash(key);
         if(buckets[i]==null) buckets[i] = new LinkedList<>();
-        if(buckets[i]==null||buckets[i].indexOf(key)==-1){
+        if(buckets[i].indexOf(key)==-1){
             buckets[i].add(key);
         }
     }
     
     public void remove(int key) {
-        int i = Hashing(key);
-        if(buckets[i]==null)return;
+        int i = hash(key);
+        if(buckets[i]==null) return;
         if(buckets[i].indexOf(key)!=-1){
             buckets[i].remove(Integer.valueOf(key));
         }
     }
     
     public boolean contains(int key) {
-        int i = Hashing(key);
-        if(buckets[i]==null) return false;
-        if(buckets[i].indexOf(key)!=-1){
-            return true;
+        int i = hash(key);
+        if(buckets[i]!=null){
+            return buckets[i].contains(key);
         }
         return false;
     }
-   
 }
 
 /**
