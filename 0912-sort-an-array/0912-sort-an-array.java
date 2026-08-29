@@ -1,51 +1,35 @@
-public class Solution {
-    private int partition(int[] nums, int left, int right) {
-        int mid = (left + right) >> 1;
-        swap(nums, mid, left + 1);
+class Solution {
+    private void swap(int[] array,int i,int j){
+        int temp = array[i];
+        array[i]=array[j];
+        array[j] = temp;
+    }
+    public void quickSort(int[] nums,int start,int end){
+        if(end<=start) return;
+        int pivot = partition(nums,start,end);
+        quickSort(nums,start,pivot-1);
+        quickSort(nums,pivot+1,end);
 
-        if (nums[left] > nums[right])
-            swap(nums, left, right);
-        if (nums[left + 1] > nums[right])
-            swap(nums, left + 1, right);
-        if (nums[left] > nums[left + 1])
-            swap(nums, left, left + 1);
+    }
+    public int partition(int[] nums,int start,int end){
+        int mid = start + (end-start)/2;
+        swap(nums,mid,end);
+        int pivot = nums[end];
+        int i=start-1;
+        int j = start;
+        for(;j<end;j++){
+            if(nums[j]<pivot){
+                i++;
+                swap(nums,i,j);
+            }
 
-        int pivot = nums[left + 1];
-        int i = left + 1;
-        int j = right;
-
-        while (true) {
-            while (nums[++i] < pivot);
-            while (nums[--j] > pivot);
-            if (i > j) break;
-            swap(nums, i, j);
         }
-
-        nums[left + 1] = nums[j];
-        nums[j] = pivot;
-        return j;
+        i++;
+        swap(nums,i,end);
+        return i;
     }
-
-    private void swap(int[] nums, int i, int j) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
-    }
-
-    private void quickSort(int[] nums, int left, int right) {
-        if (right <= left + 1) {
-            if (right == left + 1 && nums[right] < nums[left])
-                swap(nums, left, right);
-            return;
-        }
-
-        int j = partition(nums, left, right);
-        quickSort(nums, left, j - 1);
-        quickSort(nums, j + 1, right);
-    }
-
     public int[] sortArray(int[] nums) {
-        quickSort(nums, 0, nums.length - 1);
+        quickSort(nums,0,nums.length-1);
         return nums;
     }
 }
