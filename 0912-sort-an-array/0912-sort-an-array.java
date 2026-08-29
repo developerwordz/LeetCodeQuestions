@@ -1,48 +1,50 @@
 class Solution {
-    public void mergeSort(int[] array){
-        int len = array.length;
+    public void mergeSort(int[] nums){
+        int len =nums.length;
         if(len<=1) return;
-        int middle = len/2;
-        int left[] = new int[middle];
-        int right[] = new int[len-middle];
+        int mid = nums.length/2;
+
+        int[] left = new int[mid];
+        int[] right = new int[len-mid];
         int i=0,j=0;
         for(;i<len;i++){
-            if(i<middle){
-                left[i]=array[i];
+            if(i<mid){
+                left[i] = nums[i];
             }
             else{
-                right[j]=array[i];
+                right[j]=nums[i];
                 j++;
             }
         }
         mergeSort(left);
         mergeSort(right);
-        merge(left,right,array);
+        merge(left,right,nums);
     }
-    private void merge(int[] leftArray,int[] rightArray,int[] array){
-        int i=0,l=0,r=0;
-        int leftSize=array.length/2,rightSize=array.length-leftSize;
+    private void merge(int[] left,int[] right,int[] nums){
+        int i=0,r=0,l=0;
+        int leftSize = nums.length/2;
+        int rightSize = nums.length-leftSize;
         while(l<leftSize&&r<rightSize){
-            if(leftArray[l]<rightArray[r]){
-                array[i]=leftArray[l];
+            if(left[l]<right[r]){
+                nums[i]=left[l];
                 i++;
                 l++;
             }
             else{
-                array[i]=rightArray[r];
+                nums[i]=right[r];
                 i++;
                 r++;
             }
         }
         while(l<leftSize){
-             array[i]=leftArray[l];
+            nums[i]=left[l];
                 i++;
                 l++;
         }
         while(r<rightSize){
-            array[i]=rightArray[r];
-            i++;
-            r++;
+             nums[i]=right[r];
+                i++;
+                r++;
         }
     }
     public int[] sortArray(int[] nums) {
