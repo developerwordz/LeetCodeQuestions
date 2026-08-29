@@ -1,36 +1,52 @@
 class Solution {
-    private void swap(int[] array,int i,int j){
-        int temp = array[i];
-        array[i]=array[j];
-        array[j] = temp;
-    }
-    public void quickSort(int[] nums,int start,int end){
-        if(end<=start) return;
-        int pivot = partition(nums,start,end);
-        quickSort(nums,start,pivot);
-        quickSort(nums,pivot+1,end);
-
-    }
-    public int partition(int[] nums,int start,int end){
-        int mid = start + (end-start)/2;
-        int pivot = nums[mid];
-        int i = start-1;
-        int j = end+1;
-        while(true){
-            do{
-                i++;
-             } while(nums[i]<pivot);
-            do{
-                j--;
-             } while(nums[j]>pivot);
-            if(i>=j){
-                return j;
+    public void mergeSort(int[] array){
+        int len = array.length;
+        if(len<=1) return;
+        int middle = len/2;
+        int left[] = new int[middle];
+        int right[] = new int[len-middle];
+        int i=0,j=0;
+        for(;i<len;i++){
+            if(i<middle){
+                left[i]=array[i];
             }
-            swap(nums,i,j);
+            else{
+                right[j]=array[i];
+                j++;
+            }
+        }
+        mergeSort(left);
+        mergeSort(right);
+        merge(left,right,array);
+    }
+    private void merge(int[] leftArray,int[] rightArray,int[] array){
+        int i=0,l=0,r=0;
+        int leftSize=array.length/2,rightSize=array.length-leftSize;
+        while(l<leftSize&&r<rightSize){
+            if(leftArray[l]<rightArray[r]){
+                array[i]=leftArray[l];
+                i++;
+                l++;
+            }
+            else{
+                array[i]=rightArray[r];
+                i++;
+                r++;
+            }
+        }
+        while(l<leftSize){
+             array[i]=leftArray[l];
+                i++;
+                l++;
+        }
+        while(r<rightSize){
+            array[i]=rightArray[r];
+            i++;
+            r++;
         }
     }
     public int[] sortArray(int[] nums) {
-        quickSort(nums,0,nums.length-1);
+        mergeSort(nums);
         return nums;
     }
 }
