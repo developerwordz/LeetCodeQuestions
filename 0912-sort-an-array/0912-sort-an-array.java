@@ -7,26 +7,27 @@ class Solution {
     public void quickSort(int[] nums,int start,int end){
         if(end<=start) return;
         int pivot = partition(nums,start,end);
-        quickSort(nums,start,pivot-1);
+        quickSort(nums,start,pivot);
         quickSort(nums,pivot+1,end);
 
     }
     public int partition(int[] nums,int start,int end){
         int mid = start + (end-start)/2;
-        swap(nums,mid,end);
-        int pivot = nums[end];
-        int i=start-1;
-        int j = start;
-        for(;j<end;j++){
-            if(nums[j]<pivot){
+        int pivot = nums[mid];
+        int i = start-1;
+        int j = end+1;
+        while(true){
+            do{
                 i++;
-                swap(nums,i,j);
+             } while(nums[i]<pivot);
+            do{
+                j--;
+             } while(nums[j]>pivot);
+            if(i>=j){
+                return j;
             }
-
+            swap(nums,i,j);
         }
-        i++;
-        swap(nums,i,end);
-        return i;
     }
     public int[] sortArray(int[] nums) {
         quickSort(nums,0,nums.length-1);
