@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0217-contains-duplicate) |
+| [0347-top-k-frequent-elements](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0347-top-k-frequent-elements) |
 | [0705-design-hashset](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0705-design-hashset) |
 | [0912-sort-an-array](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0912-sort-an-array) |
 | [1929-concatenation-of-array](https://github.com/developerwordz/LeetCodeQuestions/tree/master/1929-concatenation-of-array) |
@@ -21,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0049-group-anagrams) |
 | [0169-majority-element](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0217-contains-duplicate) |
+| [0347-top-k-frequent-elements](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0347-top-k-frequent-elements) |
 | [0705-design-hashset](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0705-design-hashset) |
 ## Simulation
 |  |
@@ -33,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0217-contains-duplicate) |
+| [0347-top-k-frequent-elements](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0347-top-k-frequent-elements) |
 | [0912-sort-an-array](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0912-sort-an-array) |
 ## String
 |  |
@@ -52,11 +55,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0169-majority-element) |
+| [0347-top-k-frequent-elements](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0347-top-k-frequent-elements) |
 | [0912-sort-an-array](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0912-sort-an-array) |
 ## Counting
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0169-majority-element) |
+| [0347-top-k-frequent-elements](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0347-top-k-frequent-elements) |
 ## Boyer–Moore Majority Vote Algorithm
 |  |
 | ------- |
@@ -76,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0347-top-k-frequent-elements) |
 | [0912-sort-an-array](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0912-sort-an-array) |
 ## Merge Sort
 |  |
@@ -84,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bucket Sort
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0347-top-k-frequent-elements) |
 | [0912-sort-an-array](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0912-sort-an-array) |
 ## Radix Sort
 |  |
@@ -101,4 +108,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0075-sort-colors) |
+## Quickselect
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/developerwordz/LeetCodeQuestions/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->
