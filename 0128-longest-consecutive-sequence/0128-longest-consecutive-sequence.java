@@ -1,10 +1,9 @@
 class Solution {
     public int longestConsecutive(int[] nums) {
-        HashSet<Integer> numset=new HashSet<>();
+        Set<Integer> numset=new HashSet<>();
         for(int num:nums){
             numset.add(num);
         }
-        // numset=set(nums)
 
         int longest=0;
         
